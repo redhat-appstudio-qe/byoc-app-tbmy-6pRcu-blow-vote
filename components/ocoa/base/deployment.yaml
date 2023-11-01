@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: ocoa
     spec:
       containers:
-      - image: java-quarkus-image:latest
+      - image: quay.io/redhat-appstudio-qe/byoc-vtll-tenant/byoc-app-tbmy/ocoa@sha256:64b77d8b7d5cdb9019b1db5a617c1243edb1c6bc9dcaa709de2d95c0cdd39e7e
         name: my-java-quarkus
         ports:
         - containerPort: 8081
