@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: ocoa
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-vtll-tenant/byoc-app-tbmy/ocoa@sha256:64b77d8b7d5cdb9019b1db5a617c1243edb1c6bc9dcaa709de2d95c0cdd39e7e
+        name: my-java-quarkus
+        resources: {}
+status: {}
